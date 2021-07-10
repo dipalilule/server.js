@@ -1,0 +1,15 @@
+version: 0.2
+
+
+phases:
+   pre_build:
+     commands:
+        -echo logging in to amazon ECR...
+        -aws --version
+        -$ (aws-ecr-get-lohin --region $aws_default_region --mo-include-email)
+build:
+     commands:
+        -echo build started on 'date'
+        -echo nuilding the docker image...
+        -docker nuild -t srepoaitory_URI :latest .
+        
