@@ -14,3 +14,4 @@ app.get('/', (req, res) = {
         
  app. listen(port, host);
 console.log("running on http://$(HOST):(PORT)");
+java home =version 4- running on ecs!!!
